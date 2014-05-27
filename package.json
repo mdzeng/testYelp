@@ -1,0 +1,16 @@
+{
+  "name": "application-name",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "3.4.8",
+    "googlemaps": "^0.1.9",
+    "jade": "*",
+    "moment": "^2.6.0",
+    "request": "^2.36.0",
+    "yelp": "^0.1.1"
+  }
+}

@@ -1,0 +1,37 @@
+<h3>Where have I been?</h3>
+<form action="/" method="POST">
+    <input type="hidden" name="latitude" value=""/>
+    <input type="hidden" name="longitude" value=""/>
+	<input type="hidden" name="map" value=""/>
+    <button type="submit" class="btn btn-primary btn-lg" disabled>Check In!</button>
+</form>
+
+{{! below the form, above the script tag }}
+
+
+{{#if error}}
+<p class="text-warning">{{error}}</p>
+{{/if}}
+{{#if location}}
+<p>
+    The browser says you are at <strong>{{location.latitude}}, {{location.longitude}}</strong>.
+</p>
+<p>
+    Your Map Data appears to be:
+    <blockquote>{{location.map}}</blockquote>
+</p>
+{{/if}}
+
+
+{{#if restaurantData}}
+<p>
+    Here are some places that you can try out
+</p>
+<ul>
+	{{#restaurantData.businesses}}
+		<li> {{ name }}: {{ mobile_url }} </li>
+	{{/restaurantData.businesses}}
+</ul>
+{{/if}}
+
+<script src="javascripts/client.js"></script>
