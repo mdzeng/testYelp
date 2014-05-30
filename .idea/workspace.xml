@@ -67,25 +67,34 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="0" selection-start="316" selection-end="316" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="795">
+            <state line="44" column="21" selection-start="1024" selection-end="1024" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="795">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index_post.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.handlebars" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/layouts/main.handlebars">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="20" selection-start="327" selection-end="327" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="315">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index_post.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/index_post.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="53" selection-start="1902" selection-end="1902" vertical-scroll-proportion="0.397463" vertical-offset="817" max-vertical-offset="1290">
+            <state line="78" column="0" selection-start="2123" selection-end="2123" vertical-scroll-proportion="0.0" vertical-offset="1013" max-vertical-offset="1530">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sample_yelp.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/javascripts/sample_yelp.js">
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="34" selection-start="464" selection-end="464" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="825">
+            <state line="26" column="29" selection-start="325" selection-end="325" vertical-scroll-proportion="0.0" vertical-offset="172" max-vertical-offset="675">
               <folding />
             </state>
           </provider>
@@ -94,10 +103,17 @@
       <file leaf-file-name="home.handlebars" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/home.handlebars">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="8" selection-start="628" selection-end="628" vertical-scroll-proportion="-9.333333" vertical-offset="136" max-vertical-offset="630">
-              <folding>
-                <marker date="1401137294000" expanded="true" signature="741:815" placeholder="..." />
-              </folding>
+            <state line="47" column="17" selection-start="1230" selection-end="1230" vertical-scroll-proportion="-8.708333" vertical-offset="496" max-vertical-offset="1140">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="19" selection-start="41" selection-end="41" vertical-scroll-proportion="0.063424945" vertical-offset="0" max-vertical-offset="473">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -119,7 +135,9 @@
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/public/javascripts/sample_yelp.js" />
         <option value="$PROJECT_DIR$/routes/index_post.js" />
+        <option value="$PROJECT_DIR$/public/stylesheets/style.css" />
         <option value="$PROJECT_DIR$/views/home.handlebars" />
+        <option value="$PROJECT_DIR$/node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/.gitignore" />
       </list>
     </option>
   </component>
@@ -241,24 +259,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="stylesheets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="testYelp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="testYelp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascripts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -524,15 +524,15 @@
       <workItem from="1400812416425" duration="1383000" />
       <workItem from="1401031450622" duration="2518000" />
       <workItem from="1401121572402" duration="2281000" />
-      <workItem from="1401130902829" duration="7875000" />
+      <workItem from="1401130902829" duration="13878000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14057000" />
+    <option name="totallyTimeSpent" value="20126000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="874" extended-state="7" />
+    <frame x="0" y="22" width="1440" height="874" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -540,6 +540,7 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48809522" sideWeight="0.79028815" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24946082" sideWeight="0.6202046" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33730158" sideWeight="0.5469584" order="16" side_tool="false" content_ui="tabs" />
@@ -565,7 +566,6 @@
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.6439232" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.48819876" sideWeight="0.79028815" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46903554" sideWeight="0.32977587" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
@@ -625,17 +625,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/routes/index_post.js</url>
-          <line>63</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="13" />
+      <option name="time" value="18" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -656,9 +649,7 @@
     <entry file="file://$PROJECT_DIR$/views/home.handlebars">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="7" selection-start="257" selection-end="257" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="165">
-          <folding>
-            <marker date="1401137294000" expanded="true" signature="741:815" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -725,9 +716,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/sample_yelp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="34" selection-start="464" selection-end="464" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="825">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/express3-handlebars/node_modules/handlebars/lib/handlebars.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="0" selection-start="782" selection-end="782" vertical-scroll-proportion="0.5821727" vertical-offset="226" max-vertical-offset="585">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/express3-handlebars/node_modules/handlebars/bin/handlebars">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="192" column="12" selection-start="5499" selection-end="5499" vertical-scroll-proportion="0.5236769" vertical-offset="2692" max-vertical-offset="3420">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="21" selection-start="1024" selection-end="1024" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="795">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/client.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="8" selection-start="663" selection-end="663" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
+        <state line="17" column="8" selection-start="663" selection-end="663" vertical-scroll-proportion="0.53911203" vertical-offset="0" max-vertical-offset="473">
           <folding />
         </state>
       </provider>
@@ -739,32 +758,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
+    <entry file="file://$PROJECT_DIR$/routes/index_post.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="316" selection-end="316" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="795">
+        <state line="78" column="0" selection-start="2123" selection-end="2123" vertical-scroll-proportion="0.0" vertical-offset="1013" max-vertical-offset="1530">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/sample_yelp.js">
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="34" selection-start="464" selection-end="464" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="825">
+        <state line="26" column="29" selection-start="325" selection-end="325" vertical-scroll-proportion="0.0" vertical-offset="172" max-vertical-offset="675">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/home.handlebars">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="8" selection-start="628" selection-end="628" vertical-scroll-proportion="-9.333333" vertical-offset="136" max-vertical-offset="630">
-          <folding>
-            <marker date="1401137294000" expanded="true" signature="741:815" placeholder="..." />
-          </folding>
+        <state line="47" column="17" selection-start="1230" selection-end="1230" vertical-scroll-proportion="-8.708333" vertical-offset="496" max-vertical-offset="1140">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index_post.js">
+    <entry file="file://$PROJECT_DIR$/node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="53" selection-start="1902" selection-end="1902" vertical-scroll-proportion="0.397463" vertical-offset="817" max-vertical-offset="1290">
+        <state line="2" column="19" selection-start="41" selection-end="41" vertical-scroll-proportion="0.063424945" vertical-offset="0" max-vertical-offset="473">
           <folding />
         </state>
       </provider>
