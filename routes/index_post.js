@@ -57,8 +57,23 @@ module.exports = function(req, res) {
 		   		if (err ) console.log(err);
 
 			    var businesses = null
-			    businesses = JSON.stringify(data["businesses"]).replace("\n", " ");
+			    businesses = JSON.parse(JSON.stringify(data["businesses"]).replace("\n", " "));
 			    console.log(businesses)
+
+			    var businessObjects = [];
+			    for (var bizItr in businesses) {
+				    var biz = businesses[bizItr];
+				    var businessSingle = {};
+
+				    for (var bizdata in biz) {
+					    businessSingle[bizdata] = biz[bizdata];
+				    }
+				    if (!businessSingle["is_closed"]) {
+					    businessObjects.push(businessSingle);
+				    }
+
+			    }
+
 
 
 			    if (businesses) {
@@ -69,7 +84,8 @@ module.exports = function(req, res) {
 				              longitude: longitude,
 				              map: addressLoc
 				          },
-					      restaurantData: JSON.parse(JSON.stringify(data).replace("\n", " "))
+					      restaurantData: JSON.parse(JSON.stringify(data, null, '\t').replace("\n", " ")),
+						  bizData: businessObjects
 				      });
 		        }
 		   	})
