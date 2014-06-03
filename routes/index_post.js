@@ -1,6 +1,8 @@
 var gm = require('googlemaps');
 var yelp = require('./yelp.js');
 
+var restaurantResults = null;
+
 var getLocation = function(lat, lon, callback) {
 	var locationData = lat + "," + lon;
 	gm.reverseGeocode(locationData, function(err, data){
@@ -19,7 +21,6 @@ module.exports = function(req, res) {
     getLocation(latitude, longitude, function(err, data) {
         // diagnostic
         //console.log(latitude, longitude, err, data);
-	    console.log("this is the data we want " + JSON.stringify(data["results"]));
 	    var dataResults = data["results"];
 	    //Lets just construct the first address
 
@@ -33,21 +34,38 @@ module.exports = function(req, res) {
 
 
 	    if (addressLoc) {
+		    if (restaurantResults) {
+			    console.log("we already have a cache of restaurants so no need to reask yelp");
+                res.render('home', {
+                      error: err,
+                      location: {
+                          latitude: latitude,
+                          longitude: longitude,
+                          map: addressLoc
+                      },
+                    //restaurantData: JSON.parse(JSON.stringify(data, null, '\t').replace("\n", " ")),
+                      bizData: restaurantResults
+                  });
+            }
 
-		    yelp.searchFood(latitude, longitude, function(err, data) {
-			    if (data) {
-				    res.render('home', {
-				          error: err,
-				          location: {
-				              latitude: latitude,
-				              longitude: longitude,
-				              map: addressLoc
-				          },
-					    //restaurantData: JSON.parse(JSON.stringify(data, null, '\t').replace("\n", " ")),
-						  bizData: data
-				      });
-			    }
-		    })
+		    else {
+			    yelp.searchFood(latitude, longitude, function(err, data) {
+				    if (data) {
+					    restaurantResults = data;
+					    res.render('home', {
+					          error: err,
+					          location: {
+					              latitude: latitude,
+					              longitude: longitude,
+					              map: addressLoc
+					          },
+						    //restaurantData: JSON.parse(JSON.stringify(data, null, '\t').replace("\n", " ")),
+							  bizData: data
+					      });
+				    }
+			    });
+		    }
+
 	    }
 
     });
