@@ -1,13 +1,5 @@
 var gm = require('googlemaps');
-
-
-var yelp = require("yelp").createClient({
-  consumer_key: "oFk754uhxvAlT-r8ttVyAg",
-  consumer_secret: "RE6MA485GTtu4rP1aV_px1FUFhw",
-  token: "ofoUa9fuzM7VEjvG62T39hk_RcIEgDJX",
-  token_secret: "4D7XE50RLdZRmGixvAnI2MWFJjk"
-});
-
+var yelp = require('./yelp.js');
 
 var getLocation = function(lat, lon, callback) {
 	var locationData = lat + "," + lon;
@@ -20,21 +12,9 @@ var getLocation = function(lat, lon, callback) {
 };
 
 
-var searchFood = function(lat, lon, callback) {
-	var latlon = lat + "," + lon;
-	//Modeled after http://api.yelp.com/v2/search?term=food&ll=37.788022,-122.399797
-	yelp.search({term: "food", ll: latlon}, function(err, data) {
-		if (err) console.log(err);
-		callback(err, data)
-	});
-	//callback (null, "");
-}
-
 module.exports = function(req, res) {
     var latitude = req.body.latitude;
     var longitude = req.body.longitude;
-
-	//var done = this.async();
 
     getLocation(latitude, longitude, function(err, data) {
         // diagnostic
@@ -53,30 +33,9 @@ module.exports = function(req, res) {
 
 
 	    if (addressLoc) {
-		    searchFood(latitude, longitude, function(err, data) {
-		   		if (err ) console.log(err);
 
-			    var businesses = null
-			    businesses = JSON.parse(JSON.stringify(data["businesses"]).replace("\n", " "));
-			    console.log(businesses)
-
-			    var businessObjects = [];
-			    for (var bizItr in businesses) {
-				    var biz = businesses[bizItr];
-				    var businessSingle = {};
-
-				    for (var bizdata in biz) {
-					    businessSingle[bizdata] = biz[bizdata];
-				    }
-				    if (!businessSingle["is_closed"]) {
-					    businessObjects.push(businessSingle);
-				    }
-
-			    }
-
-
-
-			    if (businesses) {
+		    yelp.searchFood(latitude, longitude, function(err, data) {
+			    if (data) {
 				    res.render('home', {
 				          error: err,
 				          location: {
@@ -84,12 +43,11 @@ module.exports = function(req, res) {
 				              longitude: longitude,
 				              map: addressLoc
 				          },
-					      restaurantData: JSON.parse(JSON.stringify(data, null, '\t').replace("\n", " ")),
-						  bizData: businessObjects
+					    //restaurantData: JSON.parse(JSON.stringify(data, null, '\t').replace("\n", " ")),
+						  bizData: data
 				      });
-		        }
-		   	})
-
+			    }
+		    })
 	    }
 
     });
